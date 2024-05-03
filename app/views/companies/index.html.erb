@@ -1,0 +1,8 @@
+<h1>companies</h1>
+<% companies= Company.all%>
+
+<ul>
+<%for c in companies%>
+<li><%=c[name]%> <li>
+<%end%>
+<ul>
