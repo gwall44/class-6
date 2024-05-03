@@ -1,9 +1,14 @@
 <h1>Tacos!<h1>
 
 <% 
-fillings =["Carnitas", "Chicken","Al Pastor"]
+fillings =["Carnitas", "Chicken","Al Pastor","Veggie"]
 %>
-<p>We have they many types of tacos: <%= fillings.count%> <p>
+<p>We have this many types of tacos: <%= fillings.count%> <p>
 
+<ul>
+<% for taco in fillings%>
+<li><%=taco%></li>
+<%end%>
+<ul>
 
 <p>I love tacos<p>
